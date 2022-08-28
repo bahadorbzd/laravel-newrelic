@@ -1,0 +1,44 @@
+{
+    "name": "bahadorbzd/laravel-newrelic",
+    "description": "A package for log to newrelic",
+    "keywords": [
+        "log",
+        "newrelic",
+        "logging",
+        "tracking"
+    ],
+    "type": "package",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/bahadorbzd/laravel-newrelic/issues",
+        "source": "https://github.com/bahadorbzd/laravel-newrelic"
+    },
+    "authors": [
+        {
+            "name": "Bahador Babazadeh",
+            "email": "email.bahador@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Bzd\\Newrelic\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "v13-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Bzd\\Newrelic\\NewrelicServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
