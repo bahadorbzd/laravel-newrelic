@@ -230,7 +230,7 @@ class Newrelic
      */
     public function customMetric(string $name, $value)
     {
-        return $this->call('newrelic_custom_metric', array($name, $value));
+        return $this->call('newrelic_custom_metric', array('Custom/' . $name, $value));
     }
 
     /**
